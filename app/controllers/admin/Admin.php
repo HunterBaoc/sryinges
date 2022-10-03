@@ -6,12 +6,14 @@
     use controllers\BaseControllers;
 
     class Admin extends BaseControllers{
+        
         function index(){
-            
-            $this->success('/home', '成功');
-        }
+        //     $loader = new \Twig\Loader\FilesystemLoader('/path/to/templates');
+        //     $twig = new \Twig\Environment($loader, [
+        //         //'cache' => '/path/to/compilation_cache',
+        //     ]);
 
-        function add(){
-            echo "This is admin.admin.php@add";
+            echo "Test Macaw ";
         }
+        
     }
