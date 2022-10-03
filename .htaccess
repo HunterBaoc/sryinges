@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+
+# 排除一些条件，必须两个条件都满足后才重定向到index.php
+# 如果你访问的不是文件
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# 如果你访问的文件不是目录
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ^(.*)$ 匹配所有的路径映射到入口文件 index.php/$1
+# QSA：表示保留参数如get传值?xxx==xx...
+# L：作为最后一条
+RewriteRule ^(.*)$ index.php?$1 [QSA,L]
