@@ -9,12 +9,7 @@
          * 
          */
 
-        public function __construct(){
-            $loader = new \Twig\Loader\FilesystemLoader('/data/www/default/sryinges/app/views');
-            $this->twig = new \Twig\Environment($loader, [
-                //'cache' => '/path/to/compilation_cache',
-            ]);
-        }
+
 
         protected function assign($var, $value=null){
             // 如果$var是数组，则把$var中的内容追加到data中

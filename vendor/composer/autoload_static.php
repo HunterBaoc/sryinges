@@ -9,9 +9,15 @@ class ComposerStaticInit06684649a4c20b6d9c3654b09ee2d650
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'f32902f145fce7a432f59959f59e5a18' => __DIR__ . '/../..' . '/app/helper.php',
+        '1ab338ff15bc7740c4e7314b2f279529' => __DIR__ . '/../..' . '/config.inc.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'models\\' => 7,
+        ),
         'h' => 
         array (
             'home\\' => 5,
@@ -37,9 +43,17 @@ class ComposerStaticInit06684649a4c20b6d9c3654b09ee2d650
         array (
             'NoahBuscher\\Macaw\\' => 18,
         ),
+        'M' => 
+        array (
+            'Medoo\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/models',
+        ),
         'home\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/controllers/home',
@@ -67,6 +81,10 @@ class ComposerStaticInit06684649a4c20b6d9c3654b09ee2d650
         'NoahBuscher\\Macaw\\' => 
         array (
             0 => __DIR__ . '/..' . '/noahbuscher/macaw',
+        ),
+        'Medoo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/catfan/medoo/src',
         ),
     );
 

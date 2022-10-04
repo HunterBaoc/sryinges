@@ -19,6 +19,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'catfan/medoo' => array(
+            'pretty_version' => 'v2.1.7',
+            'version' => '2.1.7.0',
+            'reference' => '74be58f80d330d1075ef3bfd0fb3d057349597ae',
+            'type' => 'framework',
+            'install_path' => __DIR__ . '/../catfan/medoo',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'noahbuscher/macaw' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
